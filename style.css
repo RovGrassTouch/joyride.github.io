@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+
+}
+nav{
+    background-color: white;
+    color: black;
+    position: sticky;
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    height: 100px;
+}
+
+li{
+    margin-left: 50px;
+    float: left;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+h2 a{
+    font-size:large;
+    text-decoration: none;
+    color: black;
+}
+
+h2 a :hover{
+    color: blue;
+}
+
+p{
+    color: white;
+}
