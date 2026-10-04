@@ -1,43 +1,99 @@
 body{
-    background-color: black;
+    background-image: url(images/bg.gif);
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     border: 0;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
-
+    color: white;
 }
 nav{
     background-color: white;
     color: black;
     position: sticky;
+    top: 0;
     display: flex;
-    border: none;
-    justify-content: space-between;
-    height: 100px;
+    height: 70px;
+}
+
+.main{
+    background-color: black;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+ul{
+    text-align: center;
+    margin: 0;
 }
 
 li{
     margin-left: 50px;
     float: left;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
     text-decoration: none;
     display: block;
 }
 
-h2 a{
-    font-size:large;
+#screenshots{
+   transform: scale(0.5);
+   border: 2px solid #ffffff;
+   transition: transform 0.3s ease;
+   overflow: hidden;
+}
+
+#screenshots img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#screenshots:hover{
+   transform: scale(1);
+   border: 4px solid #ffffff;
+}
+
+
+img{
+    border: 4px solid #ffffff;
+}
+
+.home img{
+    width: 640px;
+    height: 480px;
+}
+
+a{
+    font-size:medium;
     text-decoration: none;
     color: black;
 }
 
-h2 a :hover{
-    color: blue;
+a :hover{
+    color: rgb(255, 255, 255);
 }
 
-p{
-    color: white;
+.home{
+    text-align: center;
+}
+
+.story{
+    display: flex;
+}
+
+.credits{
+    text-align: center;
+}
+
+.screenshots{
+    text-align: center;
+}
+
+.home, .story, .screenshots, .credits{
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
